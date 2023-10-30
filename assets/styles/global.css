@@ -473,6 +473,18 @@
     row-gap: 85px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .order-section .order-section__order-way {
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .order-section .order-section__order-way {
+    max-width: 320px;
+  }
+}
 .order-section .order-section__order-way .order-section__order-way-item {
   max-width: 20%;
   width: 100%;
@@ -534,7 +546,7 @@
   }
 }
 .order-section .order-section__order-way .order-section__order-way-item::after, .order-section .order-section__order-way .order-section__order-way-item:before {
-  content: " ";
+  content: "";
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='110' height='6' viewBox='0 0 110 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Group 8'%3E%3Ccircle id='Ellipse 4' cx='81' cy='3' r='3' fill='%23C4C4C4'/%3E%3Ccircle id='Ellipse 8' cx='107' cy='3' r='3' fill='%23C4C4C4'/%3E%3Ccircle id='Ellipse 5' cx='55' cy='3' r='3' fill='%23C4C4C4'/%3E%3Ccircle id='Ellipse 6' cx='29' cy='3' r='3' fill='%23C4C4C4'/%3E%3Ccircle id='Ellipse 7' cx='3' cy='3' r='3' fill='%23C4C4C4'/%3E%3C/g%3E%3C/svg%3E");
   width: 110px;
   height: 6px;
@@ -647,12 +659,11 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin: 0 -15px;
-  row-gap: 30px;
+  margin: -15px;
 }
 @media only screen and (max-width: 576px) {
   .order-section .order-section__form .order-section__form-content {
-    row-gap: 15px;
+    margin: -7.5px;
   }
 }
 .order-section .order-section__form .order-section__form-content .order-section__form-field {
@@ -707,7 +718,7 @@
 .order-section .order-section__form .order-section__form-content .order-section__form-range .order-section__form-range__input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background-color: #42A9ED;
+  background-color: #42a9ed;
   margin-top: -13.5px;
   width: 27px;
   height: 27px;
@@ -719,7 +730,7 @@
 .order-section .order-section__form .order-section__form-content .order-section__form-range .order-section__form-range__input::-moz-range-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background-color: #42A9ED;
+  background-color: #42a9ed;
   margin-top: -13.5px;
   width: 27px;
   height: 27px;
@@ -748,8 +759,13 @@
   }
 }
 .order-section .order-section__form .order-section__form-content .order-section__form-field__content {
-  padding: 0 15px;
+  padding: 15px;
   position: relative;
+}
+@media only screen and (max-width: 576px) {
+  .order-section .order-section__form .order-section__form-content .order-section__form-field__content {
+    padding: 7.5px;
+  }
 }
 .order-section .order-section__form .order-section__form-content .order-section__form-field__content .order-section__form-file {
   position: absolute;
