@@ -335,14 +335,14 @@
     .order-section__order-way {
       .order-section__order-way-item {
         .icon {
-          -webkit-animation: shadow-animation .5s ease-in 1;
-          animation: shadow-animation .5s ease-in 1;
+          -webkit-animation: shadow-animation 0.5s ease-in 1;
+          animation: shadow-animation 0.5s ease-in 1;
         }
         @for $i from 1 through 5 {
           &:nth-child(#{$i}) {
             .icon {
-              -webkit-animation-delay: $i * .5s;
-              animation-delay: $i * .5s;
+              -webkit-animation-delay: $i * 0.5s;
+              animation-delay: $i * 0.5s;
             }
           }
         }
@@ -378,12 +378,12 @@
     @media only screen and (max-width: 768px) {
       margin-top: 50px;
     }
-    @media only screen and (max-width:576px){
+    @media only screen and (max-width: 576px) {
       max-width: 440px;
-      margin-left:auto ;
+      margin-left: auto;
       margin-right: auto;
     }
-    @media only screen and (max-width:440px){
+    @media only screen and (max-width: 440px) {
       max-width: 320px;
     }
     .order-section__order-way-item {
@@ -443,7 +443,7 @@
           }
         }
       }
-      &:not(:last-child){
+      &:not(:last-child) {
         @media only screen and (max-width: 768px) {
           padding-bottom: 85px;
         }
@@ -757,7 +757,7 @@
           -o-transition: 0.1s;
           transition: 0.1s;
           position: absolute;
-          top: 47px;
+          top: 62px;
           width: 100%;
           max-width: calc(100% - 30px);
           border-radius: 0 0 3px 3px;
@@ -765,6 +765,13 @@
           border-top: 0;
           background: rgba(39, 39, 51);
           z-index: 2;
+          @media only screen and (max-width: 992px) {
+            top: 60px;
+          }
+          @media only screen and (max-width: 576px) {
+            top: 52px;
+            max-width: calc(100% - 15px);
+          }
           &::-webkit-scrollbar {
             width: 15px;
           }
