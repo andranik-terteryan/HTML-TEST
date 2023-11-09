@@ -23,12 +23,12 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.buttonNulled {
+.button {
   @include buttonNulled;
   display: block;
 }
 
-.primary-btn {
+.button--state--blue {
   border: 1px solid $white;
   color: $white;
   background-color: $buttonBlue;
@@ -62,7 +62,7 @@ body {
     }
   }
 }
-.secondary-btn {
+.button--state--white {
   border: 1px solid $borderGray;
   color: $hardBlue;
   background-color: $white;

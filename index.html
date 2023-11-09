@@ -61,31 +61,32 @@
       <header class="app-header">
         <div class="container">
           <div class="app-header__content">
-            <h1 class="app-header__brand">
+            <h1 class="brand">
               LoremIpsum.
-              <span class="app-header__brand-blue">
+              <span class="brand__blue">
                 <b>N</b>
                 <b>e</b>
                 <b>t</b>
               </span>
             </h1>
-            <nav class="app-header__nav">
-              <ul class="app-header__nav-list">
-                <li class="app-header__nav-item">
+
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
                   <a
                     href="#"
-                    class="app-header__nav-link app-header__nav-link--active"
+                    class="menu__link menu__link--active"
                     >Бизнес</a
                   >
                 </li>
-                <li class="app-header__nav-item">
-                  <a href="#" class="app-header__nav-link">О нас</a>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О нас</a>
                 </li>
-                <li class="app-header__nav-item">
-                  <a href="#" class="app-header__nav-link">Цены</a>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Цены</a>
                 </li>
-                <li class="app-header__nav-item">
-                  <a href="#" class="app-header__nav-link">Оформить заказ</a>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Оформить заказ</a>
                 </li>
               </ul>
             </nav>
@@ -100,53 +101,53 @@
         <section class="hero-section">
           <div class="container">
             <div class="hero-section__descriptions">
-              <h2 class="hero-section__title">
-                <span class="hero-section__title--blue"> Lorem ipsum</span>
+              <h2 class="title">
+                <span class="title__blue"> Lorem ipsum</span>
                 dolor sit amet consectetur
-                <span class="hero-section__title--blue">adipiscing</span>
+                <span class="title__blue">adipiscing</span>
               </h2>
-              <div class="hero-section__list">
-                <h3 class="hero-section__list--title">
+
+              <div class="list-overlay hero-section__list">
+                <h3 class="list-overlay__title">
                   At vero eos et accusamus et iusto odio dignissimos ducimus!
                 </h3>
-                <ul class="hero-section__list--modifier">
-                  <li class="hero-section__list-item">
-                    Totam rem aperiam eaque ipsa
-                  </li>
-                  <li class="hero-section__list-item">
+
+                <ul class="list list-overlay__list">
+                  <li class="list__item">Totam rem aperiam eaque ipsa</li>
+                  <li class="list__item">
                     Sit voluptatem accusantium doloremque laudantium
                   </li>
-                  <li class="hero-section__list-item">
+                  <li class="list__item">
                     Sed ut perspiciatis, unde omnis iste natus error
                   </li>
                 </ul>
               </div>
+
               <div class="hero-section__actions">
-                <button
-                  class="buttonNulled primary-btn hero-section__actions--btn"
-                >
+                <button class="button button--state--blue hero-section__btn">
                   заказать
                 </button>
-                <button
-                  class="buttonNulled secondary-btn hero-section__actions--btn"
-                >
+                <button class="button button--state--white hero-section__btn">
                   подробнее
                 </button>
               </div>
             </div>
           </div>
         </section>
+        
         <section class="order-section">
           <div class="container">
-            <h3 class="order-section__headline">
+            <h3 class="headline">
               Оформление
-              <span class="order-section__headline--blue">Заказа</span>
+              <span class="headline__blue">Заказа</span>
             </h3>
+
             <p class="order-section__subHeadline">
               Перед заполнением формы ознакомьтесь с нашей схемой работы!
             </p>
-            <ul class="order-section__order-way">
-              <li class="order-section__order-way-item">
+
+            <ul class="order-section__order-way order-way">
+              <li class="order-way__item">
                 <div class="icon">
                   <svg
                     width="56"
@@ -161,11 +162,9 @@
                     />
                   </svg>
                 </div>
-                <p class="order-section__order-way-item--description">
-                  Lorem ipsum dolor sit amet
-                </p>
+                <p class="order-way__description">Lorem ipsum dolor sit amet</p>
               </li>
-              <li class="order-section__order-way-item">
+              <li class="order-way__item">
                 <div class="icon">
                   <svg
                     width="56"
@@ -180,11 +179,9 @@
                     />
                   </svg>
                 </div>
-                <p class="order-section__order-way-item--description">
-                  Сonsecteturadipiscing elit
-                </p>
+                <p class="order-way__description">Сonsecteturadipiscing elit</p>
               </li>
-              <li class="order-section__order-way-item">
+              <li class="order-way__item">
                 <div class="icon">
                   <svg
                     width="56"
@@ -213,11 +210,9 @@
                     />
                   </svg>
                 </div>
-                <p class="order-section__order-way-item--description">
-                  Sed do eiusmod tempor
-                </p>
+                <p class="order-way__description">Sed do eiusmod tempor</p>
               </li>
-              <li class="order-section__order-way-item">
+              <li class="order-way__item">
                 <div class="icon">
                   <svg
                     width="56"
@@ -232,11 +227,11 @@
                     />
                   </svg>
                 </div>
-                <p class="order-section__order-way-item--description">
+                <p class="order-way__description">
                   Esse cillum dolore eu fugiat
                 </p>
               </li>
-              <li class="order-section__order-way-item">
+              <li class="order-way__item">
                 <div class="icon">
                   <svg
                     width="56"
@@ -251,87 +246,78 @@
                     />
                   </svg>
                 </div>
-                <p class="order-section__order-way-item--description">
+                <p class="order-way__description">
                   Excepteur sint occaecat cupidatat non proident
                 </p>
               </li>
             </ul>
-            <form class="order-section__form" action="" method="#">
-              <div class="order-section__form-content">
-                <div
-                  class="order-section__form-field order-section__custom-select"
-                >
-                  <div class="order-section__form-field__content">
-                    <div class="order-section__custom-select-trigger">
+
+            <form class="order-section__form form" action="" method="#">
+              <div class="form__content">
+                <div class="form__field custom-select">
+                  <div class="form__item-inner">
+                    <div class="custom-select__trigger">
                       <input type="hidden" name="type" id="system_type" />
-                      <span class="order-section__custom-select-trigger-text"
+                      <span class="custom-select__selected-text"
                         >Выберите тип системы</span
                       >
                     </div>
-                    <ul class="order-section__custom-select-options">
-                      <li class="order-section__custom-select-option">
-                        Sed ut perspiciatis
-                      </li>
-                      <li class="order-section__custom-select-option">
-                        Nemo enim ipsam
-                      </li>
-                      <li class="order-section__custom-select-option">
-                        Et harum quidem
-                      </li>
-                      <li class="order-section__custom-select-option">
-                        Temporibus autem
-                      </li>
-                      <li class="order-section__custom-select-option">
-                        Itaque earum rerum
-                      </li>
+                    <ul class="custom-select__options">
+                      <li class="custom-select__option">Sed ut perspiciatis</li>
+                      <li class="custom-select__option">Nemo enim ipsam</li>
+                      <li class="custom-select__option">Et harum quidem</li>
+                      <li class="custom-select__option">Temporibus autem</li>
+                      <li class="custom-select__option">Itaque earum rerum</li>
                     </ul>
                   </div>
                 </div>
-                <div class="order-section__form-field">
-                  <div class="order-section__form-field__content">
+
+                <div class="form__field">
+                  <div class="form__item-inner">
                     <input
-                      class="order-section__form-input"
+                      class="form__input"
                       type="email"
                       name="email"
                       placeholder="Ваш e-mail"
                     />
                   </div>
                 </div>
-                <div class="order-section__form-field">
-                  <div class="order-section__form-field__content">
+
+                <div class="form__field">
+                  <div class="form__item-inner">
                     <input
-                      class="order-section__form-input"
+                      class="form__input"
                       type="text"
                       name="name"
                       placeholder="Ваше имя"
                     />
                   </div>
                 </div>
-                <div class="order-section__form-range">
-                  <div class="order-section__form-field__content">
-                    <label for="range" class="order-section__form-label">
+
+                <div class="form__field form__field--range">
+                  <div class="form__item-inner">
+                    <label for="range" class="form__label">
                       <span>Sed ut perspiciatis, unde omnis iste natus</span>
-                      <span class="range-output">50%</span>
+                      <span id="range-output">50%</span>
                     </label>
                     <input
                       min="0"
                       max="100"
                       id="range"
                       name="perspiciatis"
-                      class="order-section__form-range__input"
+                      class="form__range"
                       type="range"
                     />
                   </div>
                 </div>
-                <div class="order-section__form-field">
-                  <div class="order-section__form-field__content">
-                    <label class="order-section__form-file__label" for="file">
-                      <span class="order-section__form-file__label--text">
-                        Прикрепить файл
-                      </span>
+
+                <div class="form__field upload-file">
+                  <div class="form__item-inner">
+                    <label class="upload-file__label" for="file">
+                      <span class="upload-file__text"> Прикрепить файл </span>
                     </label>
                     <input
-                      class="order-section__form-file"
+                      class="upload-file__input"
                       type="file"
                       name="file"
                       id="file"
@@ -339,10 +325,11 @@
                   </div>
                 </div>
               </div>
-              <div class="order-section__form-submit">
+
+              <div class="form__submit">
                 <button
                   type="submit"
-                  class="buttonNulled primary-btn order-section__form-submit__btn"
+                  class="button button--state--blue form__button-submit"
                 >
                   Отправить
                 </button>
@@ -357,9 +344,9 @@
             <p class="app-footer__copyright">
               © 2018 «LoremIpsum.net» Все права защищены.
             </p>
-            <ul class="app-footer__action-group app-footer__button-group">
-              <li class="app-footer__action-group-item">
-                <button class="app-footer__button buttonNulled">
+            <ul class="app-footer__action-group app-footer--button-group">
+              <li class="app-footer__item">
+                <button class="app-footer__button button">
                   <div class="icon">
                     <svg
                       width="21"
@@ -389,8 +376,8 @@
                   Qiwi wallet
                 </button>
               </li>
-              <li class="app-footer__action-group-item">
-                <button class="app-footer__button buttonNulled">
+              <li class="app-footer__item">
+                <button class="app-footer__button button">
                   <div class="icon">
                     <svg
                       width="21"
@@ -423,8 +410,8 @@
                   Yandex Money
                 </button>
               </li>
-              <li class="app-footer__action-group-item">
-                <button class="app-footer__button buttonNulled">
+              <li class="app-footer__item">
+                <button class="app-footer__button button">
                   <div class="icon">
                     <svg
                       width="21"
@@ -456,7 +443,7 @@
               </li>
             </ul>
             <ul class="app-footer__action-group">
-              <li class="app-footer__action-group-item">
+              <li class="app-footer__item">
                 <a href="mailto:info@ipsum228.com" class="app-footer__link">
                   <div class="icon">
                     <svg
@@ -475,7 +462,7 @@
                   info@ipsum228.com
                 </a>
               </li>
-              <li class="app-footer__action-group-item">
+              <li class="app-footer__item">
                 <a
                   href="https://vk.com/"
                   target="_blank"
